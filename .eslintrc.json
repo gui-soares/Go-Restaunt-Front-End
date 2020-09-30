@@ -1,0 +1,76 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react",
+        "plugin:import/typescript"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks",
+        "prettier",
+        "plugin-import",
+        "jsx-a11y"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx", ".js"] }],
+        "import/prefer-default-export": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "ts": "never",
+              "tsx": "never"
+            }
+          ],
+        "no-param-reassign": "off",
+        "comma-dangle": "off",
+        "global-require": "off",
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "camelcase": "off",
+        "quotes": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/state-in-constructor": "off",
+        "react/static-property-placement": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/no-unescaped-entities": "off",
+        "react/prop-types": "off",
+        "react-native/no-raw-text": "off",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/ban-ts-ignore": "off",
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-object-literal-type-assertion": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-var-requires": "off"
+    },
+    "settings": {
+        "import/resolver": {
+          "typescript": {}
+        }
+      }
+}
